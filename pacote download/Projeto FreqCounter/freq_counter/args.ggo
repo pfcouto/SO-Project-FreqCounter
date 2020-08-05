@@ -1,0 +1,18 @@
+package "freq_counter"
+version "1.0"
+purpose "Contar numero de bytes"
+
+
+
+option "compact" c "Produces the result of processing files in compact mode" no
+option "dir" d "Processes regular files within the directory" string typestr="dirname" no
+option "discrete" - "Shows only the count of the values present in the list of values" int multiple no
+option "file" f "Processes files in the list" string multiple no
+option "mode" m "Choose between octet (-m 1), bi-octet (-m 2) or quad-octet (-m 4). If the option is not specified, it is assumed to be -m 1" int values="1","2","4" default="1" no
+option "output" o "The results acquired by processing the files will be written to a file" string no
+option "search" s "Indicates all occurrences of the specified octet pattern" string no
+option "time" - "Indicates execution time in seconds, accurately up to milliseconds" no
+
+text "\nNome: Pedro Félix Couto \nNumero: 2191265\n"
+
+#option "size" s "Optional argument, takes exactly 3 int values separated by commas" multiple(3) 
